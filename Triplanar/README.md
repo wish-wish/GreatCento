@@ -2,6 +2,10 @@ Real time Matrix VFX implemeted in Shaders in Unity using Triplanar mapping
 =================
 ![screenshot](documentation/matrix_gif.gif)
 
+for developer , 
+1、unzip the Assets\Mesh\main\LOW_POLY_TEXTURED.7z 
+2、tested in unity2018.4.25
+
 
 For the detailed break down of the technique, have a look at my blog post: https://medium.com/@shahriyarshahrabi/shader-studies-matrix-effect-3d2ead3a84c5
 
