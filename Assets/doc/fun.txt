@@ -1,0 +1,336 @@
+https://www.jianshu.com/p/c789aff2d6e9
+一、数学函数：
+函数	功能
+abs(x)	返回输入参数的绝对值
+acos(x)	反余切函数，输入参数范围为[-1,1]，返回[0,π ]区间的角度值
+all(x)	如果输入参数均不为 0，则返回 ture；否则返回 flase。 &&运算
+any(x)	输入参数只要有其中一个不为 0，则返回true。||运算
+asin(x)	反正弦函数,输入参数取值区间为[-1,1]，返回角度值范围为
+atan(x)	反正切函数，返回角度值范围为
+atan2(y,x)	计算 y/x 的反正切值。实际上和 atan(x)函数功能完全一样，至少输入参数不同。 atan(x) = atan2(x, float(1))。
+ceil(x)	对输入参数向上取整。 例如：ceil(float(1.3)) ，返回值为2.0
+clamp(x,a,b)	如果 x 值小于 a，则返回 a；如果 x 值大于 b，返回 b；否则返回 x。
+cos(x)	返回弧度 x 的余弦值。返回值范围为[-1,1]
+cosh(x)	双曲余弦（hyperbolic cosine）函数，计算 x的双曲余弦值。
+cross(A,B)	返回两个三元向量的叉积(cross product)。注意，输入参数必须是三元向量！
+degrees(x)	输入参数为弧度值(radians)， 函数将其转换为角度值(degrees)
+determinant(m)	计算矩阵的行列式因子。
+dot(A,B)	返回 A 和 B 的点积(dot product)。参数 A 和 B可以是标量，也可以是向量（输入参数方面，点积和叉积函数有很大不同）。
+exp(x)	计算 ex 的值， e= 2.71828182845904523536
+exp2(x)	计算 2x 的值
+floor(x)	对输入参数向下取整。例如 floor(float(1.3))返回的值为 1.0；但是 floor(float(-1.3))返回的值为-2.0。该函数与 ceil(x)函数相对应。
+fmod(x,y)	返回 x/y 的余数。如果 y 为 0， 结果不可预料。
+frac(x)	返回标量或矢量的小数
+frexp(x, outexp)	将浮点数 x 分解为尾数和指数，即x = m* 2^exp， 返回 m， 并将指数存入 exp 中；如果 x 为 0，则尾数和指数都返回 0
+isfinite(x)	判断标量或者向量中的每个数据是否是有限数，如果是返回true；否则返回 false;无限的或者非数据(not-a-number NaN)，
+isinf(x)	判断标量或者向量中的每个数据是否是无限，如果是返回 true；否则返回 false;
+isnan(x)	判断标量或者向量中的每个数据是否是非数据(not-a-number NaN)，如果是返回 true；否则返回 false;
+ldexp(x, n)	计算 x ∗2n 的值------frexp的逆运算，返回 x*2^exp。
+len/lenth 返回输入向量的长度。
+lerp(a, b, f)	计算(1- f )∗ + ∗a b f 或者 a f b a + ∗ - ( ) 的值。即在下限 a 和上限 b 之间进行插值， f 表示权值。注意，如果 a 和 b 是向量，则权值 f必须是标量或者等长的向量。
+lit(N•dot•L,N•dot•H, m)	N 表示法向量；L 表示入射光向量；H 表示半角向量；m 表示高光系数。函数计算环境光、散射光、镜面光的贡献，返回的 4 元向量：
+X 位表示环境光的贡献，总是 1.0；Y 位代表散射光的贡献，如果 N • L < 0 ，则为 0；否则为 N • L；Z 位代表镜面光的贡献，如果 N • L < 0 或者N • H < 0 ，则位 0；否则为 (N•* L*)m；W 位始终位 1.0
+log(x)	计算 ln( x) 的值， x 必须大于 0
+log2(x)	计算 log2(x) 的值， x 必须大于 0
+log10(x)	计算 log10 (x) 的值， x 必须大于 0
+max(a, b)	比较两个标量或等长向量元素，返回最大值。
+min(a,b)	比较两个标量或等长向量元素，返回最小值。
+modf(x, out ip)	将浮点数num分解成整数部分和小数部分，返回小数部分，将整数部分存入ip。不常用
+mul(M, N)	计算两个矩阵相乘，如果 M 为 AxB 阶矩阵，N 为 BxC 阶矩阵，则返回 AxC 阶矩阵。下面两个函数为其重载函数。
+pow(x, y)	
+radians(x)	函数将角度值转换为弧度值
+round(x)	Round-to-nearest，或 closest integer to x 即四舍五入。
+rsqrt(x)	X 的反平方根， x 必须大于 0----返回输入值平方根的倒数
+saturate(x)	如果 x 小于 0，返回 0；如果 x 大于 1，返回1；否则，返回 x
+sign(x)	如果 x 大于 0，返回 1；如果 x 小于 0，返回-1；否则返回 0。
+sin(x)	输入参数为弧度，计算正弦值，返回值范围为[-1,1]
+sincos(float x,out s, out c)	该函数是同时计算 x 的 sin 值和 cos 值，其中s=sin(x)， c=cos(x)。该函数用于"同时需要计算 sin 值和 cos 值的情况"，比分别运算要快很多!
+sinh(x)	计算双曲正弦（hyperbolic sine）值。
+smoothstep(min,max, x)	回一个在输入值之间平稳变化的插值。值 x 位于 min、 max 区间中。如果 x=min，返回 0；如果 x=max，返回 1；如果 x 在两者之间，按照下列公式返回数据：可以用来生成0到1的平滑过渡值，它也叫平滑阶梯函数。
+step(a, x)	如果 x<a，返回 0；否则，返回 1。-----（x>=a）?1:0。
+sqrt(x)	求 x 的平方根， x ， x 必须大于 0。 
+tan(x)	输入参数为弧度，计算正切值
+tanh(x)	计算双曲正切值
+transpose(M)	M 为矩阵，计算其转置矩阵
+
+opencv
+Void remap(InputArray src,OutputArray dst,InputArray map1,InputArray map2,int interpolation,int borderMode=BORDER_CONSTANT,const Scalar&borderValue=Scalar())
+src: 源图像 dst: 目标图像，与 src 相同大小map1: x坐标 map2: y坐标 interpolation: 表示插值方法 borderMode：表示边界插值类型 borderValue:表示插值数值
+
+half remap(half x, half t1, half t2, half s1, half s2)
+{
+    return (x - t1) / (t2 - t1) * (s2 - s1) + s1;
+}
+
+产生的距离场(Distance Field)效
+float smoothstep(float t1, float t2, float x) {
+  // Scale, bias and saturate x to 0..1 range
+  // 在remap算法中接触过
+  x = clamp((x - t1) / (t2 - t1), 0.0, 1.0); 
+  // Evaluate polynomial
+  return x * x * (3 - 2 * x);
+}
+
+二、几何函数：
+几何函数，如下表所示，用于执行和解析几何相关的计算，例如根据入射光向量和顶点法向量，求取反射光和折射光方向向量。
+Cg 语言标准函数库中有3 个几何函数会经常被使用到，分别是：
+normalize 函数，对向量进行归一化；
+reflect 函数，计算反射光方向向量；
+refract 函数，计算折射光方向向量。
+
+注意:
+1. 着色程序中的向量最好进行归一化之后再使用，否则会出现难以预料的错误;
+2. reflect 函数和 refract 函数都存在以"入射光方向向量"作为输入参数，注意这两个函数中使用的入射光方向向量，是从外指向几何顶点的；平时我们在着色程序中或者在课本上都是将入射光方向向量作为从顶点出发。
+
+函数	功能
+distance( pt1, pt2)	两点之间的欧几里德距离（Euclidean distance）
+faceforward(N,I,Ng)	如果 Ng • I < 0 ，返回 N；否则返回-N。检测多边形是否位于正面。
+length(v)	返回一个向量的模，即 sqrt(dot(v,v))
+normalize( v)	归一化向量
+reflect(I, N)	根据入射光方向向量 I，和顶点法向量N，计算反射光方向向量。其中 I 和 N必须被归一化，需要非常注意的是，这个 I 是指向顶点的；函数只对三元向量有效
+refract(I,N,eta)	计算折射向量， I 为入射光线， N 为法向量， eta 为折射系数；其中 I 和 N 必须被归一化， 如果 I 和 N 之间的夹角太大，则返回（0， 0， 0），也就是没有折射光线； I 是指向顶点的；函数只对三元向量有效。
+
+
+三、纹理映射函数
+下表提供 Cg 标准函数库中的纹理映射函数。这些函数被 ps_2_0、 ps_2_x、arbfp1、 fp30 和fp40 等 profiles 完全支持（fully supported）。所有的这些函数返回四元向量值。
+
+函数	功能
+tex1D(sampler1D tex, float s)	一维纹理查询
+tex1D(sampler1D tex, float s, float dsdx, float dsdy)	使用导数值（derivatives）查询一维纹理
+Tex1D(sampler1D tex, float2 sz)	一维纹理查询，并进行深度值比较
+Tex1D(sampler1D tex, float2 sz, float dsdx,float dsdy)	使用导数值（derivatives）查询一维纹理， 并进行深度值比较
+Tex1Dproj(sampler1D tex, float2 sq)	一维投影纹理查询
+Tex1Dproj(sampler1D tex, float3 szq)	一维投影纹理查询，并比较深度值
+Tex2D(sampler2D tex, float2 s)	二维纹理查询---采样
+Tex2D(sampler2D tex, float2 s, float2 dsdx, float2 dsdy)	使用导数值（derivatives）查询二维纹理
+Tex2D(sampler2D tex, float3 sz)	二维纹理查询，并进行深度值比较
+Tex2D(sampler2D tex, float3 sz, float2 dsdx,float2 dsdy)	使用导数值（derivatives）查询二维纹理，并进行深度值比较
+Tex2Dproj(sampler2D tex, float3 sq)	二维投影纹理查询
+Tex2Dproj(sampler2D tex, float4 szq)	二维投影纹理查询，并进行深度值比较
+texRECT(samplerRECT tex, float2 s)	二维非投影矩形纹理查询（OpenGL独有）
+texRECT (samplerRECT tex, float2 s, float2 dsdx, float2 dsdy)	二维非投影使用导数的矩形纹理查询（OpenGL独有）
+texRECT (samplerRECT tex, float3 sz)	二维非投影深度比较矩形纹理查询（OpenGL独有）
+texRECT (samplerRECT tex, float3 sz, float2 dsdx,float2 dsdy)	二维非投影深度比较并使用导数的矩形纹理查询（OpenGL独有）
+texRECT proj(samplerRECT tex, float3 sq)	二维投影矩形纹理查询（OpenGL独有）
+texRECT proj(samplerRECT tex, float3 szq)	二维投影矩形纹理查询（OpenGL独有）
+Tex3D(sampler3D tex, float s)	三维纹理查询
+Tex3D(sampler3D tex, float3 s, float3 dsdx, float3 dsdy)	结合导数值（derivatives）查询三维纹理
+Tex3Dproj(sampler3D tex, float4 szq)	查询三维投影纹理，并进行深度值比较
+texCUBE(samplerCUBE tex, float3 s)	查询立方体纹理
+texCUBE (samplerCUBE tex, float3 s, float3 dsdx, float3 dsdy)	结合导数值（derivatives）查询立方体纹理
+texCUBEproj (samplerCUBE tex, float4 sq)	查询投影立方体纹理
+
+四、偏导函数
+函数	功能
+ddx(a)	参数 a 对应一个像素位置， 返回该像素值在 X 轴上的偏导数
+ddy(a)	参数 a 对应一个像素位置， 返回该像素值在 X 轴上的偏导数
+fwidth 返回 abs(ddx(x)+abs(ddy(x))。
+
+五、调试函数
+函数	功能
+void debug(float4 x)	如果在编译时设置了 DEBUG，片段着色程序中调用该函数可以将值 x 作为COLOR 语义的最终输出；否则该函数什么也不做。
+
+六、一些变量
+float3 viewDir 包含了视角的观察方向，主要用于计算视差效应（Parallax effects ），边缘光照，等等。
+float4 COLOR 包含了经过内插值（interpolated ）的每个顶点的颜色值。
+float4 screenPos 包含了用于反射效果的屏幕坐标系的位置信息。例如，在Unity专业版的WetStreet shader中使用了它。
+float3 worldPos 包含了世界坐标系中的位置。
+float3 worldRefl 包含了世界坐标系中的反射向量，如果Surface Shader没有重写o.Normal。参考Reflect-Diffuse shader。
+float3 worldNormal 包含了世界坐标系中的法线向量，如果Surface Shader没有重写o.Normal。
+float3 worldRefl;
+INTERNAL_DATA 包含了世界坐标系的反射向量，如果Surface Shader重写了o.Normal。为了得到基于逐像素的法线贴图的反射向量，请使用WorldReflectionVector (IN,o.Normal) 。参考Reflect-Bumped shader。
+float3 worldNormal;
+INTERNAL_DATA 包含了世界坐标系的发现向量，如果Surface Shader重写了o.Normal。为了得到基于逐像素的法线贴图的法线向量，请使用WorldNormalVector (IN,o.Normal) 。参考Reflect-Bumped shader。
+
+七、Cg中输入数据流一般分为两类
+1、varying 参数：在Cg程序中通过语义进行绑定变量， Cg语言提供了一组语义词，用以表示参数是由顶点的那些数据初始化的，一旦这个变量使用了语义词进行绑定，那么这个变量值被初始化的同时也意味着它有了特殊的含义，如表示位置、法线等含义。语义提供了一种使用随顶点变化或随片段变化而变化的值来初始化Cg程序参数的方法，这些数据都是从应用程序输入到GPU的数据，如顶点位置、法向量、纹理坐标数据等。
+2、Uniform 参数：Uniform是用来限制一个变量的初始值的来源，当声明一个变量为Uniform类型的时候，表示这个变量的初始值来自于外部的其他环境。除了获取初始值的这点之外，Uniform关键字声明的变量和其他变量是完全一样的。通常用Uniform来定义一些与三维渲染有关的离散信息数据，并通常不会随着图元信息的变化而变化，如材质对光的反射信息。Uniform表示一个参数，通常使用uniform表示函数的形参，不能定义一个uniform表示的局部变量。
+
+八、Unity的内置Uniform输入参数如下：
+uniform float4 _Time, _SinTime, _CosTime; // 时间量
+uniform float4 _ProjectionParams; // x = 1 or -1 (如果投影翻转就是-1) // y = 近平面; z = 远平面; w = 1/远平面
+uniform float4 _ScreenParams; // x = width; y = height; z = 1 +1/width; w = 1 + 1/height
+uniform float3_WorldSpaceCameraPos;
+uniform float4x4 _Object2World; //模型矩阵
+uniform float4x4 _World2Object; // 模型矩阵的逆
+uniform float4 _LightPositionRange; // xyz = pos, w = 1/range
+uniform float4 _WorldSpaceLightPos0; // 光源的位置和方向
+uniform float4x4 UNITY_MATRIX_MVP; // 模型视图投影矩阵
+uniform float4x4 UNITY_MATRIX_MV; // 模型视图矩阵
+uniform float4x4 UNITY_MATRIX_V; // 视图矩阵
+uniform float4x4 UNITY_MATRIX_P; // 投影矩阵
+uniform float4x4 UNITY_MATRIX_VP; // 视图投影矩阵
+uniform float4x4 UNITY_MATRIX_T_MV; // 模型视图矩阵的转置矩阵
+uniform float4x4 UNITY_MATRIX_IT_MV; // 模型视图矩阵的逆矩阵的转置矩阵
+uniform float4x4 UNITY_MATRIX_TEXTURE0; // 贴图纹理矩阵
+uniform float4x4 UNITY_MATRIX_TEXTURE1; //贴图纹理矩阵
+uniform float4x4 UNITY_MATRIX_TEXTURE2; //贴图纹理矩阵
+uniform float4x4 UNITY_MATRIX_TEXTURE3; //贴图纹理矩阵
+uniform float4 UNITY_LIGHTMODEL_AMBIENT; // 环境色
+
+九、输入输出
+输入输出：在第一节中我们了解到对于程图形渲染管线，可编程控制的部分只有两个，顶点着色器和片段着色器。对于编程控制这两个部分，首要的任务就是要怎么给它们传参数。Cg语言的参数传递同样也有“值传递”和“引用传递”之分。因为GPU不支持指针，所以Cg语言采用了如下的方式来修辞参数传递：
+1、in:修辞一个形参只是用于输入，进入函数体时被初始化，且该形参值的改变不会影响实参值，传递方式为值传递。
+2、out:修辞一个形参只是用于输出，进入函数体时没有被初始化，一般为函数的返回值。
+3、inout:修辞一个形参即用于输入也用于输出，这是典型的引用传递。
+
+十、语义
+表示图元数据的含义（顶点的位置、法向量或者纹理信息），也表明这些图元数据存放的硬件资源。语义是顶点程序和片段程序之间输入\输出数据和寄存器之间的桥梁，因此语义只对这两个处理阶段有意义，并且只在入口函数才有效，在内部函数无效。
+实际上就是将输入\输出数据和寄存器做一个映射关系
+
+语义词和语义绑定：
+顶点着色器：
+1、POSITION\SV_POSITION :模型坐标的位置,
+2、TANGENT:正交于表面法线的向量
+3、NORMAL:表面法线向量，需要进行归一化
+4、TEXCOORDi：第i组纹理坐标（也即UV坐标，坐标范围在0~1之间）,i是0~7中的一个数字
+5、COLOR:颜色
+6、PSIZE:点的大小
+7、BLENDINDICES：通用属性，可以用它和TANGENT来替换TEXCOORDi
+注：SV_POSTION和POSTION的唯一区别是用在顶点着色器中作为输出语义时，SV_POSTION表示的顶点位置会被固定，不能被改变。如果作为片段着色器的输入语义就是一样的，都可以被改变。
+8、FOG:输入雾坐标
+
+片段着色器的输入语义即为顶点着色器的输出语义。
+
+片段着色器的输出语义如下：
+1、COLOR：颜色
+2、DEPTH：片段的深度
+
+十一、函数及运算
+1、透明度测试：
+clip(texColor.a - _Cutoff);  //当 a - 定义的系数 < 0 是将执行 discard 指令剔除该片元
+2、透明度混合
+用back和front两个pass进行混合
+3、遮罩纹理：
+可以通过一张遮罩纹理的R通道的值来控制高光反射的强弱
+fixed specularMask = tex2D(_SpecularMark,uv).r * _SpecularScale;
+fixed3 specular = _LightColor0.rgb * _Specular.rgb * pow(saturate(dot(i.worldNormal,blinnDir)),_Gloss) * specularMask;
+4、渐变纹理：
+利用HalfLambert 使法线和光线的点积的范围变为了[0,1]，从而在UV上以halfLambert为坐标采样。
+fixed halfLambert = 0.5*(dot(worldNormalDir,worldLightDir)) + 0.5;
+fixed3 diffuseColor = tex2D(_RampTex,float2(halfLambert,halfLambert)).rgb * _Color.rgb;
+fixed3 diffuse = _LightColor0.rgb * diffuseColor;
+5、切线空间下的法线纹理：
+自由度高，记录的是相对法线信息，适用于不同的网格。可进行UV动画。可压缩。切线空间下法线纹理的Z方向总是正方向，因此可靠XY方向推导Z方向。
+
+//把模型空间下切线方向，副切线方向，法线方向 排列得到模型空间到切线空间的旋转矩阵
+//副切线由其他两个做叉乘得到，乘w 是为了区分方向（因为有两个）
+// float3 binormal = cross(normalize(v.normal),normalize(v.tangent.xyz))*v.tangent.w;
+// float3x3 rotation = float3x3(v.tangent.xyz,binormal,v.normal);
+// TANGENT_SPACE_ROTATION;//内置宏,效果同上
+TANGENT_SPACE_ROTATION;
+//计算切线空间下的光线与视角
+o.lightDir = mul(rotation,ObjSpaceLightDir(v.vertex)); //模型——>切线
+o.viewDir = mul(rotation,ObjSpaceViewDir(v.vertex));
+
+//计算切线空间下的法线坐标
+fixed3 tangentLightDir = normalize(i.lightDir);
+fixed3 tangentViewDir = normalize(i.viewDir);
+
+fixed4 packedNormal = tex2D(_BumpMap,i.uv.zw);
+fixed3 tangentNromalDir;
+tangentNromalDir = UnpackNormal(packedNormal);//法线纹理设置成 normal map 后使用此方法
+// tangentNromalDir.xy = (packedNormal*2 - 1)*_BumpScale;
+tangentNromalDir.xy *= _BumpScale;
+tangentNromalDir.z = 
+sqrt(1-saturate(dot(tangentNromalDir.xy,tangentNromalDir.xy)));//根据xy推导z
+
+6、模型空间的法线纹理
+​ 实现简单，直白，计算少。但得到的是绝对法线信息，仅可用于创建时的模型。
+
+7、纹理
+属性：_MainTex ("Texture", 2D) = "white" {}
+声明：
+sampler2D _MainTex;
+float4 _MainTex_ST;
+// float2 uv = v.texcoord.xy * _MainTex_ST.xy + _MainTex_ST.zw;
+float2 uv = TRANSFORM_TEX(v.texcoord,_MainTex);//缩放与平移确定最终纹理坐标
+float3 TexelsValue = tex2D(_MainTex,uv);//通过纹理坐标采样纹素值
+纹理名_ST 代表纹理属性 ST(scale,translation)
+X_ST.xy 代表缩放，X_ST.zw 代表平移
+
+8、高光反射Phong
+fixed3 reflectDir = normalize(reflect(worldLight,worldNormal));
+fixed3 viewDir = normalize(_WorldSpaceCameraPos.xyz - mul(unity_ObjectToWorld,v.vertex));
+fixed3 specular = _LightColor0.rgb * _Specular.rgb * pow(saturate(dot(viewDir,reflectDir)),_Gloss);
+
+9、兰伯特及半兰伯特
+_LightColor0.rgb * _Color.rgb * saturate(dot(worldNormal,worldLight))
+_LightColor0.rgb * _Color.rgb * (dot(worldNormal,worldLight)*0.5 + 0.5)——目的在于把[-1,1]映射到[0,1]，模型的背光面也会有明暗变化。因为普通漫反射会与0做比较
+
+10、渲染管线
+应用，CPU，硬盘到内存，渲染状态，DrawCall批次（模型（点，线，面），纹理，材质）
+几何，GPU，顶点着色，[曲面细分]，[几何着色]，裁剪，屏幕映射
+   顶点着色，模型形态修改，图色着色
+光栅化，GPU，三角计算(输出网格)，三角遍历(像素覆盖，输出片元)，片元着色，逐片元操作(输出合并，混合)
+   片元着色，像素，片元着色
+   逐片元操作，
+       模板测试，限制渲染区域，渲染阴影，渲染轮廓
+       深度测试，判断遮挡
+       混合，处理透明，半透明管
+视口图像，窗口图像，屏幕图像
+
+11、数学基础
+法线N的变换矩阵变换的逆转置矩阵；若一个点T 的变换矩阵为M,则法线N的变换矩阵为M的逆转置矩阵
+
+12、Properties
+name(“displayname”, 2D) = “name” {options}
+类型:
+　Float, Int, Color(num, num, num, num)(0 ~ 1) Vector(4维向量), Range(start, end)
+　2D: 2D纹理属性;
+　Rect: 矩形纹理属性;
+　Cube: 立方体纹理属性;
+　3D: 3D纹理属性;
+Options: 纹理属性选项
+　TexGen:纹理生成模式,纹理自动生成纹理坐标的模式;顶点shader将会忽略这个选项;
+　ObjectLinear, EyeLinear, SphereMap, CubeReflect, CubeNormal
+　LightmapMod: 光照贴图模式如果设置这个选项,纹理会被渲染器的光线贴图所影响。
+
+
+13、Tags
+　Tags {“标签1” = “value1” “key2” = “value2”}
+　标签的类型:
+　Queue tag 队列标签;
+　RenderType tag 渲染类型标签;
+　DisableBatching tag 禁用批处理标签;
+　ForceNoShadowCasting Tag 强制不投阴影标签;
+　IgnoreProjecttor 忽略投影标签;
+　CanUseSpriteAtlas Tag,使用精灵图集标签;
+　PreviewType Tag预览类型标签;
+
+14、Category和Fallback
+   Category分类
+　Fallback “着色器名称”;
+　Fallback Off;
+
+15、Pass
+　通道，可以把一个一个的通道看成一个一个的盒子，物体经过盒子进行加工，然后出来，就可以了。
+　1: subshader 包装了一个渲染方案，这些方案由一个个通道(Pass)来执行的，SubShader可以包括很多通道块,每个Pass都能使几何体渲染一次;
+　2: Pass基本语法:
+　Pass { [Name and Tags] [RenderSetup] [Texture Setup]}
+　Pass块的Name引用此Pass,可以在其它着色器的Pass块中引用它，减少重复操作,Name命令必须打大写;
+
+　RegularPass 通道渲染设置
+　1: Lighting 光照: 开启关闭定点光照 On/Off
+　2: Material{材质块}: 材质,定义一个使用定点光照管线的材质;
+　3:ColorMaterial: 颜色集 计算定点光照的时使用顶点颜色;
+　4: SeparateSpecular: 开光状态 开启或关闭顶点光照相关的镜面高光颜色，On/Off;
+　5: Color 设置定点光照关闭时的所使用的颜色;
+　6: Fog{雾块}: 设置雾参数;
+　7: AlphaTest: Alpha测试
+　8: ZTest: 深度测试模式;
+　9: ZWrite: 深度写模式;
+　10: Blend: 混合模式 SourceBlendMode, DestBlendMode, AlphaSourcesBlendMode, AlphaDstBlendMode;
+　11: ColorMask 颜色遮罩: 设置颜色遮罩,颜色值可以由RGB或A或0或R,G,B,A的组合,设置为0关闭所有颜色通道渲染;
+　12: Offset偏移因子: 设置深度偏移;
+
+　UsePass特殊通道
+　1: UsePass: 插入所有来自其它着色器的给定名字的通道;
+　  UsePass“Shader/Name” // Name为着色器通道;
+　  UsePass“Specular/BASE” // 插入Specular中为Bass的通道;
+　
+　GrabPass
+　1: GrabPass {}: 一种特殊通道类型，他会捕获物体所在的位置的屏幕的内容，并写入一个纹理中，这个纹理能被用于后续通道中完成一些高级图像特效,后续通道可以使用
+
+　_GrabTexture进行访问;
+　2: GrabPass{“纹理名称”} 捕获屏幕内容到指定纹理中，后续通道可以通过纹理名称来访问;

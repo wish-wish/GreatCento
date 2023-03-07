@@ -1,0 +1,24 @@
+Voronoi（泰森多边形）
+乌龟壳，叶脉，蜻蜓的翅膀，长颈鹿的身体纹理，陆地裂缝，蜂窝状，树叶微观肌理、鳄鱼皮肌理都具有相同的独特网状结构
+https://zhuanlan.zhihu.com/p/48252861
+https://zhuanlan.zhihu.com/p/24405635
+Fortune's algorithm
+https://blog.csdn.net/qikik/article/details/108948791
+维诺图
+https://blog.csdn.net/u012520030/article/details/42642817
+https://old.cescg.org/CESCG99/RCuk/
+
+mapgen2/mapgen4
+http://www-cs-students.stanford.edu/~amitp/game-programming/polygon-map-generation/#elevation
+https://www.redblobgames.com/x/1721-voronoi-alternative/
+http://www-cs-students.stanford.edu/~amitp/game-programming/grids/#relationships
+https://www.redblobgames.com/grids/parts/
+https://www.redblobgames.com/maps/mapgen4/
+https://www.redblobgames.com/
+
+https://www.redblobgames.com/x/1825-rounded-cell-painter/
+https://www.redblobgames.com/x/2122-shape-transition/
+
+
+https://www.redblobgames.com/grids/hexagons/
+https://www.redblobgames.com/grids/hexagons/implementation.html

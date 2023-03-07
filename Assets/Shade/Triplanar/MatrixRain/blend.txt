@@ -1,0 +1,57 @@
+fixed4 blend(fixed4 A, fixed4 B)
+            {
+                //        fixed4 C =A*(1-B.a)+B*(B.a);  //正常透明度混合
+                //         fixed4 C =min(A,B); //变暗
+                //         fixed4 C =max(A,B); //变亮
+                //         fixed4 C =A*B ; //正片叠底
+                //         fixed4 C=1-((1-A)*(1-B));//滤色 A+B-A*B
+                //         fixed4 C =A-((1-A)*(1-B))/B; //颜色加深
+                //         fixed4 C= A+(A*B)/(1-B); //颜色减淡
+                //         fixed4 C=A+B-1;//线性加深
+                //         fixed4 C=A+B; //线性减淡
+
+                //         fixed4 ifFlag= step(A,fixed4(0.5,0.5,0.5,0.5));
+                //         fixed4 C=ifFlag*A*B*2+(1-ifFlag)*(1-(1-A)*(1-B)*2);//叠加
+
+                //         fixed4 ifFlag= step(B,fixed4(0.5,0.5,0.5,0.5));
+                //         fixed4 C=ifFlag*A*B*2+(1-ifFlag)*(1-(1-A)*(1-B)*2); //强光
+
+                //         fixed4 ifFlag= step(B,fixed4(0.5,0.5,0.5,0.5));
+                //         fixed4 C=ifFlag*(A*B*2+A*A*(1-B*2))+(1-ifFlag)*(A*(1-B)*2+sqrt(A)*(2*B-1)); //柔光
+
+                //         fixed4 ifFlag= step(B,fixed4(0.5,0.5,0.5,0.5));
+                //         fixed4 C=ifFlag*(A-(1-A)*(1-2*B)/(2*B))+(1-ifFlag)*(A+A*(2*B-1)/(2*(1-B))); //亮光
+
+                //         fixed4 ifFlag= step(B,fixed4(0.5,0.5,0.5,0.5));
+                //         fixed4 C=ifFlag*(min(A,2*B))+(1-ifFlag)*(max(A,( B*2-1))); //点光
+
+                //         fixed4 C=A+2*B-1; //线性光
+
+                //         fixed4 ifFlag= step(A+B,fixed4(1,1,1,1));
+                //         fixed4 C=ifFlag*(fixed4(0,0,0,0))+(1-ifFlag)*(fixed4(1,1,1,1)); //实色混合
+
+                //         fixed4 C=A+B-A*B*2; //排除
+                //         fixed4 C=abs(A-B); //差值
+
+                //         fixed4 ifFlag= step(B.r+B.g+B.b,A.r+A.g+A.b);
+                //         fixed4 C=ifFlag*(B)+(1-ifFlag)*(A); //深色
+
+                //         fixed4 ifFlag= step(B.r+B.g+B.b,A.r+A.g+A.b);
+                //         fixed4 C=ifFlag*(A)+(1-ifFlag)*(B); //浅色
+
+                //         fixed4 C=A-B; //减去
+                //         fixed4 C=A/B; //划分
+
+                return A;
+
+                // 混合模式的分类
+                // 一般：正常、溶解
+                // 变暗：变暗、深色、正片叠底、颜色加深、线性加深
+                // 变亮：变亮、浅色、滤色、颜色减淡、线性减淡(添加)
+                // 对比：叠加、强光、柔光、亮光、线性光、点光、实色混合
+                // 该组特点是让亮的更亮，暗的更暗，每一个“对比系”的混合模式都可看作“变暗系”和“变亮系”的结合，
+                // 如“叠加”是
+                // 对较暗的像素进行“正片叠底”
+                // 对较亮的像素进行“滤色” 负片：差值、排除 相消：减去、划分 HSL：色相、饱和度、颜色、明度
+
+            }

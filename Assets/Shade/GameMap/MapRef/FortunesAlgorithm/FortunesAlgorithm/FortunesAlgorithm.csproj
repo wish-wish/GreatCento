@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3DF7D1B0-6F99-451F-8187-16289F23D607}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>FortunesAlgorithm</RootNamespace>
+    <AssemblyName>FortunesAlgorithm</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BeachLine.cs" />
+    <Compile Include="Geometry\ConvexPolygon.cs" />
+    <Compile Include="FortunesAlgorithm.cs" />
+    <Compile Include="Geometry\Geometry.cs" />
+    <Compile Include="Geometry\Rectangle.cs" />
+    <Compile Include="ScatterPlot.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Geometry\Point.cs" />
+    <Compile Include="VoronoiCell.cs" />
+    <Compile Include="Geometry\Line.cs" />
+    <Compile Include="VoronoiDiagram.cs" />
+    <Compile Include="IEventPoint.cs" />
+    <Compile Include="SiteEventPoint.cs" />
+    <Compile Include="Geometry\Vector3.cs" />
+    <Compile Include="IntersectEventPoint.cs" />
+    <Compile Include="BeachSection.cs" />
+    <Compile Include="Hash.cs" />
+    <Compile Include="Geometry\PerpendicularBisector.cs" />
+    <Compile Include="EventQueue.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\Structures\Structures.csproj">
+      <Project>{0BC1559B-4132-4FA3-90C2-0C7B75925E9E}</Project>
+      <Name>Structures</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+</Project>

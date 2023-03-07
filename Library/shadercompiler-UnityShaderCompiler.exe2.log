@@ -1,0 +1,122 @@
+Base path: D:/Program Files/2018.4.25f1/Editor/Data
+Cmd: initializeCompiler
+Cmd: compileComputeKernel
+  api=15 insize=1119 outsize=5125 ok=1
+Cmd: compileComputeKernel
+  api=15 insize=1632 outsize=3169 ok=1
+Cmd: compileComputeKernel
+  api=9 insize=1632 outsize=2785 ok=1
+Cmd: compileComputeKernel
+  api=9 insize=1632 outsize=4253 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=2336 outsize=2717 ok=1
+Cmd: compileComputeKernel
+  api=15 insize=2330 outsize=10685 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=2094 outsize=733 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=4891 outsize=741 ok=1
+Cmd: compileComputeKernel
+  api=15 insize=4891 outsize=16601 ok=1
+Cmd: compileComputeKernel
+  api=15 insize=2668 outsize=10609 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=1262 outsize=1629 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=3316 outsize=1537 ok=1
+Cmd: compileComputeKernel
+  api=9 insize=3316 outsize=4901 ok=1
+Cmd: compileComputeKernel
+  error: 1 plat 15 at MarchingCubes.compute(53): use of potentially uninitialized variable (Fetch)
+  api=15 insize=4688 outsize=5873 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=1753 outsize=13929 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=3277 outsize=857 ok=1
+Cmd: compileComputeKernel
+  api=9 insize=3277 outsize=1797 ok=1
+Cmd: initializeCompiler
+Cmd: compileComputeKernel
+  api=15 insize=1102 outsize=3777 ok=1
+Cmd: compileComputeKernel
+  api=9 insize=1386 outsize=5285 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=3182 outsize=1925 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=1484 outsize=349 ok=1
+Cmd: compileComputeKernel
+  api=15 insize=2059 outsize=4045 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=1176 outsize=821 ok=1
+Cmd: compileComputeKernel
+  api=15 insize=2780 outsize=83397 ok=1
+Cmd: compileComputeKernel
+  api=15 insize=10881 outsize=18161 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=4845 outsize=4101 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=18299 outsize=10377 ok=1
+Cmd: compileComputeKernel
+  api=15 insize=1806 outsize=3761 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=1454 outsize=597 ok=1
+Cmd: initializeCompiler
+Cmd: compileComputeKernel
+  error: 2 plat 15 at MultiScaleVORender.compute(30): failed to open source file: 'Packages/com.unity.postprocessing/PostProcessing/Shaders/StdLib.hlsl'
+  api=15 insize=10935 outsize=0 ok=0
+Cmd: compileComputeKernel
+  error: 2 plat 15 at Lut3DBaker.compute(1): failed to open source file: 'Packages/com.unity.postprocessing/PostProcessing/Shaders/StdLib.hlsl'
+  api=15 insize=5017 outsize=0 ok=0
+Cmd: compileComputeKernel
+  error: 2 plat 4 at MultiScaleVOUpsample.compute(37): failed to open source file: 'Packages/com.unity.postprocessing/PostProcessing/Shaders/StdLib.hlsl'
+  api=4 insize=18353 outsize=0 ok=0
+Cmd: compileComputeKernel
+  error: 2 plat 15 at Vectorscope.compute(4): failed to open source file: 'Packages/com.unity.postprocessing/PostProcessing/Shaders/StdLib.hlsl'
+  api=15 insize=1562 outsize=0 ok=0
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler

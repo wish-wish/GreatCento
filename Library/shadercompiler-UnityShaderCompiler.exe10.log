@@ -1,0 +1,110 @@
+Base path: D:/Program Files/2018.4.25f1/Editor/Data
+Cmd: initializeCompiler
+Cmd: compileComputeKernel
+  api=15 insize=1632 outsize=1677 ok=1
+Cmd: compileComputeKernel
+  api=9 insize=2336 outsize=5769 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=2094 outsize=789 ok=1
+Cmd: compileComputeKernel
+  api=9 insize=2094 outsize=805 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=4891 outsize=8593 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=3316 outsize=949 ok=1
+Cmd: compileComputeKernel
+  api=9 insize=3316 outsize=4293 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=3277 outsize=1009 ok=1
+Cmd: initializeCompiler
+Cmd: compileComputeKernel
+  api=9 insize=1102 outsize=3461 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=1386 outsize=585 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=3182 outsize=593 ok=1
+Cmd: compileComputeKernel
+  api=9 insize=1484 outsize=5581 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=2780 outsize=48145 ok=1
+Cmd: compileComputeKernel
+  api=15 insize=4845 outsize=11245 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=18299 outsize=10469 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=2867 outsize=353 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=1806 outsize=1389 ok=1
+Cmd: compileComputeKernel
+  api=15 insize=2044 outsize=1869 ok=1
+Cmd: initializeCompiler
+Cmd: compileComputeKernel
+  error: 2 plat 15 at Histogram.compute(8): failed to open source file: 'Packages/com.unity.postprocessing/PostProcessing/Shaders/StdLib.hlsl'
+  api=15 insize=2167 outsize=0 ok=0
+Cmd: compileComputeKernel
+  error: 2 plat 9 at (2): failed to open source file: 'Packages/com.unity.postprocessing/PostProcessing/Shaders/StdLib.hlsl'
+  error: 2 plat 9 at (3): failed to open source file: 'Packages/com.unity.postprocessing/PostProcessing/Shaders/Colors.hlsl'
+  error: 2 plat 9 at (4): failed to open source file: 'Packages/com.unity.postprocessing/PostProcessing/Shaders/ACES.hlsl'
+  api=9 insize=5017 outsize=0 ok=0
+Cmd: compileComputeKernel
+  error: 2 plat 4 at MultiScaleVODownsample1.compute(28): failed to open source file: 'Packages/com.unity.postprocessing/PostProcessing/Shaders/StdLib.hlsl'
+  api=4 insize=3450 outsize=0 ok=0
+Cmd: compileComputeKernel
+  error: 2 plat 4 at MultiScaleVOUpsample.compute(37): failed to open source file: 'Packages/com.unity.postprocessing/PostProcessing/Shaders/StdLib.hlsl'
+  api=4 insize=18353 outsize=0 ok=0
+Cmd: compileComputeKernel
+  error: 2 plat 15 at MultiScaleVOUpsample.compute(37): failed to open source file: 'Packages/com.unity.postprocessing/PostProcessing/Shaders/StdLib.hlsl'
+  api=15 insize=18353 outsize=0 ok=0
+Cmd: compileComputeKernel
+  error: 2 plat 15 at GaussianDownsample.compute(25): failed to open source file: 'Packages/com.unity.postprocessing/PostProcessing/Shaders/StdLib.hlsl'
+  api=15 insize=5489 outsize=0 ok=0
+Cmd: compileComputeKernel
+  error: 2 plat 15 at ExposureHistogram.compute(7): failed to open source file: 'Packages/com.unity.postprocessing/PostProcessing/Shaders/StdLib.hlsl'
+  api=15 insize=3246 outsize=0 ok=0
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler

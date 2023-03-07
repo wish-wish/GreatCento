@@ -1,0 +1,35 @@
+整个unity里面的shader的#pragma multi xxxxx_ON 关键字不能超过256个，给系统添加负担。
+所以会报错：maximum number (256) of shader keywords exceeded unity。
+做法是减少关键字的使用。
+下面提供一个优化工具。
+重点！是先备份你的工作，然后把这个工具拷贝到你的项目 Assets文件夹。
+从这个ShaderKeywordsTool文件目录拖拽 the ShaderKeywordsTool预制体到场景里。
+把ShaderKeywordsTool.cs套到预制体上。
+选择并点击这个绿色按钮 'Scan project for Shader Keywords’。
+你点击这个‘Show Shader’按钮 ，它将给你在项目窗口做些shader。
+你能够高亮显示shaders 统计keywords关键字 used between shaders
+点击按钮‘More Info’ button 将显示发现的shader的关键字的路径。
+删除没用的shaders。
+重新扫描项目按钮 - 'Scan project for Shader Keywords’
+点击这个红色按钮, 工具将自动搜索所有的 materials并且移除这些关键字 keywords that are now longer used 在项目里, 确保你已经备份了你的项目先。
+在unity的Edit/Project Settings/Graphics 点击在‘Currently tracked’旁边的clear按钮。
+重启项目。
+
+https://bitbucket.org/ArtIsDarkGames/shader-keywords-tool-unity3d/src/master/
+
+How to use
+
+IMPORTANT back up your work, this tool will alter your materials and is cannot be undone! copy the ShaderKeywordsTool folder to your Assets folder
+drag the ShaderKeywordsTool prefab from the ShaderKeywordsTool folder onto the stage
+select it and click the green button 'Scan project for Shader Keywords’
+You can click on the ‘Show Shader’ and it will take you to the shader in the project window
+You can highlight multiple shaders to count the keywords used between shaders
+Clicking the ‘More Info’ button will show the path to the shader and keywords found
+Delete unused shaders.
+Rescan project - 'Scan project for Shader Keywords’
+Click the red button, tool will automatically search all materials and remove the keywords that are now longer used in the project, make sure you have backed up your project
+In unity goto Edit/Project Settings/Graphics and click on the clear button at the bottom near ‘Currently tracked’
+Restart project
+I have used this on a big project with around 3500 Materials and found it really useful. I hope you find this tool useful also
+
+Taz Cebula - Art Is Dark

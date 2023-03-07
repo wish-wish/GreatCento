@@ -1,0 +1,466 @@
+UnityEngine.Accessibility
+VisionUtility：在视觉性能上有一些方法可以帮助使用者
+
+                                                                                                                                                      UnityEngine.Advertisements
+MetaData：给UnityAds发送各种元数据
+ShowOptions: 收集那些能够交给广告的选项，然后用来修改广告的一些行为
+PlacementState：一些广告布置的情况
+ShowResult：广告放入完成后将结果给 ShowOptions.resultCallback
+                                                                                                                                                               UnityEngine.AI
+NavMesh：被用于空间上的查询。
+NavMeshAgent：被附加到移动人物的组件上可使人物通过使用巡航网格（NavMesh）在场景中进行导航
+NavMeshBuildDebugSettings：当建立导航网格时指定哪些临时数据在进程完成后被保留
+NavMeshBuilder：导航网格建立者的接口
+NavMeshBuildMarkup：导航网格建立一个标记允许在导航网格建立过程中控制某些物体如何被处理
+NavMeshBuildSettings：结构体允许指明一个指定代理类型的规模和限制的设置
+NavMeshBuildSource：导航网格建立者一系列属性（结构体指明）
+NavMeshData：包含了导航网格数据
+NavMeshDataInstance：当加入导航网格数据时返回一个实例，可以使用这个实例来计算路径等
+NavMeshHit：导航网格查询的信息
+NavMeshLinkData：用于连接导航网格多边形的实时操作（连接导航网格，连接被结构体表示）
+NavMeshLinkInstance：代表寻路连接的实例（可在导航系统中被用于移出导航网格连接）
+NavMeshObstacle：导航网格代理要避免的障碍（导航网格障碍是圆柱形的并且可以用指定速度围绕导航网格表面移动。在默认情况下，障碍仅影响代理的躲避行为而不是寻路。这意味着当测绘路径时代理将会忽略该障碍，但是沿着路径移动时代理将会在障碍的附近回避。如果启用carving ，障碍将会在导航网格上创建一个临时的“突破口”。该突破口将会被寻路认可，因此测绘路径时将会避免该障碍。这意味着如果说障碍阻塞缺口，寻路将会寻找一个替代路线给目标。没有启用carving，代理将会朝缺口前进但是不可能通过缺口直到该障碍被清除。）
+NavMeshPath：被导航系统计算的路径
+NavMeshQueryFilter：指名寻找导航网格时要考虑的代理和区域类型
+NavMeshTriangulation：包含了导航网格三角形划分的数据
+OffMeshLink：可以在平面导航网格外移动的连接
+OffMeshLinkData：OffMeshLink的状态（数据）
+NavMeshBuildDebugFlags：用于导航网格建立过程中调试数据的操作
+NavMeshBuildSourceShape：与 NavMeshBuildSource 一起用来定义导航网格的形状
+NavMeshCollectGeometry：用于指明要收集的几何体的类型，与NavMeshBuilder.CollectSources一起使用
+NavMeshObstacleShape：障碍物的形状
+NavMeshPathStatus：路径的状态
+ObstacleAvoidanceType：障碍物的类型（不能避免、不能轻易避免等等）
+OffMeshLinkType：连接类型说明
+UnityEngine.Analytics
+
+Analytics：提供内部信息给游戏玩家（如DAU，MAU等）
+AnalyticsEvent：Unity Analytics标准事件SDK的主要类（可以一定频率发送标准事件）
+AnalyticsSessionInfo：含有分析信息（如玩家ID，游戏中通用的信息等）
+AnalyticsTracker：在触发器下自动创建和发送分析事件（设置事件名称、参数名称，并从附加组件的属性或文字值自动使用参数值）
+PerformanceReporting：提供游戏性能的信息
+AcquisitionSource：物品、货币、消费品的来源
+AcquisitionType：用于购买物品的货币类型（游戏币或者真钱）
+AdvertisingNetwork：广告或中介网络服务提供商的列表（里面有很多网络提供商名字）
+AnalyticsResult：Analytics的结果（比如创建成功、Analytics是否能被创建、平台是否支持Analytics等）
+AnalyticsSessionState：分析会话状态（是否停止、是否暂停等）
+AuthorizationNetwork：游戏内登入网络的列表（如何脸书、谷歌、自己的网等）
+Gender：玩家的性别
+ScreenName：游戏内屏幕或界面类型的列表（游戏地图、设置地图等）
+ShareType：用于社交活动的媒体类型或模式的列表
+SocialNetwork:社交活动的列表（如QQ、Facebook等）
+StotrType:游戏商店的类别（用游戏币买物品还是真钱买物品）
+UnityEngine.Animations
+WorldUpType:指明世界向上的方向作为什么（如场景Y方向、物体本地上面的坐标等）
+AnimationClipPlayable：动画的相关内容
+AnimationLayerMixerPlayable：动画层混合相关内容
+AnimationMixerPlayable：动画混合相关内容
+AnimationPlayableBinding：AnimationPlayableOutput（可被创建）的一些信息
+AnimationPlayableOutput：PlayableGraph与Animator的联系内容
+AnimatorControllerPlayable：运行时动画的控制内容
+ConstraintSource：代表了一个用于约束的源，使物体成为约束源
+LookAtConstraint：通过其他的一些源物体约束本物体的方向
+ParentConstraint：通过一些源物体约束本物体的方向和位置，等价于本物体是这些源物体的子物体
+PositionConstraint：通过其他的一些源物体约束本物体的位置
+RotationConstraint：通过其他的一些源物体约束本物体的旋转
+ScaleConstraint：通过其他的一些源物体约束本物体的大小
+IConstraint：约束组件的接口
+Axis：3D空间的坐标轴
+UnityEngine.Apple
+ReplayKit:
+UnityEngine.Assertions
+Assert：包含了一些断言（判定）方法
+AssertionException：失败时抛出的异常，但Assert.raiseExceptions要设置为true
+UnityEngine.Assertions.Comparers
+FloatComparer:Assert执行近似比较时所用的浮点比较器，可通过修改该浮点比较器来修改Assert近似比较时的规则
+UnityEngine.Audio
+AudioClipPlayable：控制声音的相关内容
+AudioMixer：声音混合器的内容
+AudioMixerGroup：混合器中物体组
+AudioMixerPlayable：控制声音混合器的相关内容
+AudioMixerSnapshot：声音混合器的快照（有个方法能够在自定义的时间后暂停\播放声音）
+AudioPlayableBinding：AudioPlayableOutput（可被创建）的一些信息
+AudioPlayableOutput：控制播放声音的
+RoomSize：描述声音影响的空间大小
+AudioMixerUpdateMode：描述声音混合器更新本身时间的方式
+UnityEngine.CrashReportHandler
+CrashReportHandler：可设定程序是否可以捕获异常
+UnityEngine.Events
+UnityEvent：0参事件。可通过为方法添加监听器来回调该方法
+UnityEvent<T0>：1参事件。可通过为方法添加监听器来回调该方法
+UnityEvent<T0,T1>：2参事件。可通过为方法添加监听器来回调该方法
+UnityEvent<T0,T1,T2>：3参事件。可通过为方法添加监听器来回调该方法
+UnityEvent<T0,T1,T2,T3>：4参事件。可通过为方法添加监听器来回调该方法
+UnityEventBase：UnityEvent的抽象类。可通过他来获取注册事件数目、名字等信息
+PersistentListenerMode：指定监听器监听方法的类型（Void、Int、Float等）
+UnityEventCallState：控制UnityEvent回调方法的范围（运行时或编辑器模式下等）
+UnityEngine.EventSystems
+AbstractEventData：被用于发送简单的事件（重置事件等）
+AxisEventData：坐标轴事件的相关数据
+BaseEventData：所有类型事件的基本数据
+BaseInput：可以通过他自定义与Input中不一样的方法
+BaseInputModule：输入模块继承他。引发事件并将它们发送到游戏物体的基础模块
+BaseRaycaster：射线发出者的基础类（有射线发出者的相关信息）
+EventSystem：关于输入、射线发送、事件发送的信息
+Entry：EventSystem注册列表的进口（监听事件的类型及监听事件的函数）
+TriggerEvent：触发器的事件类
+ExecuteEvents：帮助类向游戏物体发送IEventSystemHandler事件
+HoloLensInputModule：一种被用于全息眼镜输入的类
+Physics2DRaycaster：Physics2DRaycaster组件相关
+PhysicsRaycaster：Physics2DRaycaster组件相关
+FramePressState：得到每帧按下的状态
+InputButton：按下输入的追踪
+MouseButtonEventData：关于鼠标按钮事件的内容
+RaycastResult：BaseRaycaster的碰撞结果
+StandaloneInputModule：为鼠标、键盘、控制器输入而设计的BaseInputModule
+UIBehaviour：关于Unity中物体生命期的基本行为判断
+IBeginDragHandler：（UI）其中有OnBeginDrag方法，拖拽开始时被BaseInputModule调用
+ICancelHandler：（UI）其中有OnCancel方法，当取消事件（Esc键）发生时被BaseInputModule调用
+IDeselectHandler：（UI）其中有OnDeselect方法，当一个物体被选中是被EventSystem调用
+IDragHandler：（UI）其中有OnDrag方法，当拖拽发生时，将在每次光标移动时调用
+IDropHandler：（UI）其中有OnDrop方法，当目标物体被扔掉时被BaseInputModule调用
+IEndDragHandler：（UI）其中有OnEndDrag方法，当一个物体被拖拽结束后调用
+IEventSystemHandler：（UI）所有的事件系统（EventSystem）继承他
+IMoveHandler：（UI）其中有OnMove方法，当移动事件（方向键）发生时被BaseInputModule调用
+IPointerClickHandler：（UI）其中有OnPointerClick方法，当鼠标点击时被调用
+IPointerDownHandler：（UI）其中有OnPointerDown方法，当鼠标点下时被调用
+IPointerEnterHandler：（UI）其中有OnPointerEnter方法，当鼠标进入时被调用
+IPointerExitHandler：（UI）其中有OnPointerExit方法，当鼠标退出时被调用
+IPointerUpHandler：（UI）其中有OnPointerUp方法，当鼠标抬起时被调用
+IScrollHandler：（UI）其中有OnScroll方法，当鼠标滚轮滚动时被调用
+ISelectHandler：（UI）其中有OnSelect方法，当物体被选中时被调用
+ISubmitHandler：（UI）其中有OnSubmit方法，提交按钮被按下时(与InputManager里的Submit按键相对应，PC上默认的是Enter键)被调用，前提条件是物体被选中
+IUpdateSelectedHandler：（UI）其中有OnUpdateSelected方法，当物体被选中时每帧被调用
+EventHandler：枚举，事件的状态（使用或没使用）
+EventTriggerType：枚举，列举TriggerEvent的事件类型（拖拽、鼠标按下、鼠标抬起等）
+MoveDirection：枚举，列举上下左右以及无方向
+UnityEngine.Jobs
+IJobParallelForTransformExtensions：扩展IJobParallelForTransform的方法，其中有Schedule方法，具体不知道如何使用
+TransformAccess：物体的位置、方向、大小
+TransformAccessArray：
+IJobParallelForTransform：其中有Execute方法，具体不知道如何使用
+UnityEngine.Networking
+UnityEngine.Networking.Match
+MatchInfo：里面有匹配到主机的相关信息
+MatchInfoDirectConnectSnapshot：主要包含可选数据，当连接创建或加入匹配时，可以提供这些数据。然后在这些结果中返回该信息，以便其他客户机可以直接连接到该客户机，而不是通过中继服务器通过internet
+NetworkMatch：用于与Unity多人网络联系
+UnityEngine.Networking.NetworkSystem
+AddPlayerMessage：向AddPlay内的函数传递信息
+EmptyMessage：一个通用类，用于发送没有内容的网络消息
+ErrorMessage：向SYSTEM_ERROR中的函数传递出错信息
+IntegerMessage：仅能包含整数信息，用于被发送
+NotReadyMessage：向SYSTEM_NOT_READY中的函数发送信息
+PeerAuthorityMessage：在同一网络中关于非玩家权限改变的信息
+PeerInfoMessage：包含在同一个网络中另一个游戏玩家的信息
+PeerInfoPlayer：一个结构（玩家物体的ID等）被用于在另一个游戏玩家主机上指明玩家物体
+PeerListMessage：向clients发送包含该网络另一个玩家的信息
+ReadyMessage：向SYSTEM_READY中已注册的控制方法传送信息
+ReconnectMessage：关于client重新连接网络的信息
+RemovePlayerMessage：向SYSTEM_REMOVE_PLAYER中已注册的方法传递信息
+StringMessage：一个通用类，只是一个String
+UnityEngine.Networking.PlayerConnection
+MessageEventArgs：包含了向PlayerConnection中注册的方法传送的信息（数据、玩家ID）
+PlayerConnection：用于用于处理从播放器到编辑器的网络连接
+UnityEngine.Networking.Types
+NetworkAccessToken：被用于对客户端会话进行身份验证以允许或不允许该客户端请求的匹配操作
+AppID：枚举，标识Unity Cloud或UNET服务器上的应用程序的ID
+HostPriority：枚举，表示匹配中的客户端的优先级，从0开始并递增
+NetworkAccessLevel：枚举，描述授予此客户端的访问级别（无效的、用户级、拥有者、管理者）
+NetworkID：枚举，ID，用于匹配
+NodeID：枚举，网络的节点地址
+SourceID：枚举，用于标明一个特殊的游戏实例
+Classes
+CertificateHandler：负责拒绝或接受https请求上接收的证书
+ChannelQOS：网络通道的质量
+Channels：包含了一些默认网络通道的常量（两个通道）
+ClientScene：client的管理者，包含了静态client的信息和功能
+ConnectionConfig：用于定义两个玩家之间连接的参数
+ConnectionSimulatorConfig：为网络模拟器创建配置;只能在编辑器和开发人员构建中使用此类
+DownloadHandler：管理和处理从远程服务器接收的HTTP响应反馈的数据
+DownloadHandlerAssetBundle：用于下载AssetBundles的DownloadHandler子类
+DownloadHandlerAudioClip：用于下载音频数据给AudioClip的DownloadHandler子类
+DownloadHandlerBuffer：用于将接受的数据存储到本机的字节缓冲区的DownloadHandler子类
+DownloadHandlerFile：下载处理程序用于将下载的数据保存到文件中
+DownloadHandlerScript：使用者创建DownloadHandler类的实现时需要的抽象类，他将从网络接受到的数据转发到DownloadHandler.ReceiveData方法中，同时调用其他与下载相关的事件的回调函数
+DownloadHandlerTexture：用于下载图像给Texture的DownloadHandler子类
+GlobalConfig：定义网络中的参数（网络中最多主机数、超时时间等）
+HostTopology：定义网络拓扑的信息（每个主机其接收的消息池中可容纳的最大消息数量、允许多少连接使用默认配置）
+FilterLevel：枚举，控制网络日志消息的详细程度
+MessageBase：网络消息类应该派生自这个类
+MsgType：网络系统消息类型的容器类
+MultipartFormDataSection：用于包含通用的、非文件数据的表单部分
+MultipartFormFileSection：用于通过[IMultipartFormSection] API.将文件上传到表单
+NetworkAnimator：使网络物体与动画系统同步的组件
+NetworkBehaviour：包含了网络功能的类应该继承他
+NetworkBroadcastResult：包含了NetworkDiscovery广播的数据
+NetworkClient：这是网络系统使用的网络客户端类，它包含了NetworkConnection
+PacketStat：结构，用于追踪每个数据包的大小和编号
+NetworkCRC：关于哪个网络脚本使用哪个QOS channels更新
+NetworkDiscovery：允许Unity游戏找到彼此。它能够广播和接受广播，壳子选择性的加入使用NetworkManager的匹配游戏
+NetworkHash128：用于表示网络内容资源的128个数字
+NetworkIdentity：标明网络中的物体。他最基本的数据是NetworkInstanceId
+NetworkInstanceId：用来标明一个网络中所有参与者的网络物体。运行状态时，当一个物体出现时他被服务器分配
+NetworkLobbyManager：组件，网络大厅，特殊的NetworkManager
+NetworkLobbyPlayer：组件，与NetworkLobbyManager一起组成多人大厅系统
+NetworkManager：用于管理网络系统的类
+NetworkManagerHUD：组件，NetworkManager扩展，关于显示用来控制游戏网络状态的默认平视显示器
+NetworkMessage：一个网络联系中客户端或服务器接受到的网络信息的详细说明
+ConnectionPendingPlayers：结构，连接旧主机的游戏物体名单
+PendingPlayerInfo：结构，来自另一个玩家的游戏物体的信息
+SceneCHangeOption：枚举，当与主机连接丢失时如何处理场景改变的情况
+CheckMethod：枚举，如何检查距离（2D或3D）
+NetworkReader：和NetworkWriter一起使用，序列化数据
+NetworkSceneId：结构，用来标明场景中网络物体，Id在编辑器模式下分配
+NetworkServer：使用NetworkServerSimple实现基本的网络功能，并添加更多游戏的功能
+NetworkServerSimple：是一个基本的服务器类，没有NetworkServer类具有的与“游戏”相关的功能
+NetworkStartPosition：组件，用于在多人游戏指定玩家生成时的游戏物体初始位置
+NetworkTransform：组件，网络中物体的位置和转向
+AxisSyncMode：枚举，轴（x轴、y轴等）
+CompressionSyncMode：枚举，要压缩多少同步数据
+TransformSyncMode：枚举，如何同步物体的位置
+NetworkTransformChild：组件，同步网络对象的子物体位置
+NetworkTransformVisualizer：组件，用于帮助理解和调试NetworkTransform组件的网络移动同步
+NetworkTransport：网络传输层的API
+NetworkWriter：序列化数据
+PlayerController：表示一个网络中的玩家
+SyncList<T0>：SyncList类型的基类
+Operation：枚举，发生在SyncList类型的操作的类型
+SyncListBool：从服务器到客户机同步的布尔值列表
+SyncListFloat：从服务器到客户机同步的浮点数值列表
+SyncListInt：从服务器到客户机同步的整数值列表
+SyncListString：从服务器到客户机同步的字符串列表
+SyncListStruct<T0>：从服务器到客户机同步的结构列表
+SyncListUInt：从服务器到客户机同步的无符号值列表
+UnityWebRequest：用于与网络服务器交流
+UnityWebRequestAssetBundle：帮助使用UnityWebRequest下载资产包
+UnityWebRequestAsyncOperation：从UnityWebRequest.SendWebRequest()返回的异步操作对象
+UnityWebRequestMultimedia：帮助使用UnityWebRequest下载多媒体文件
+UnityWebRequestTexture：帮助使用UnityWebRequest下载图片文件
+UploadHandler：帮助UnityWebRequests,在HTTP请求期间管理主数据的缓冲和传输
+UploadHandlerFile：一个专门的UploadHandler，它从给定的文件中读取数据，并将原始字节作为请求体发送到服务器
+UploadHandlerRaw：UploadHandler的子类，使用本机代码内存缓冲区
+Utility：网络中实用的类（获取客户端唯一的ID等）
+IMultipartFormSection：将数据组合成多部分形式的接口
+ChannelOption：枚举，可以在网络通道上设置的选项（为通道设置缓冲区最大数量的选项等）
+ConnectionAcksType：枚举定义保存可靠消息的缓冲区的大小
+NetworkError：枚举，可能的NetworkTransport的错误
+NetworkEventType：枚举， NetworkTransport.Receive和NetworkTransport.ReceiveFromHost 返回的事件
+PlayerSpawnMethod：枚举，在多人游戏中游戏物体出现位置的方式（随机或在循环基础上的下一个地方）
+QosType：枚举，所有支持优质服务的通道模式（消息的传递质量）
+ReactorModel：枚举，定义UNET如何控制网络IO操作
+Version：枚举，网络版本（当前UNET版本）
+ClientAttribute：属性，加在成员方法上使方法可以在clients上运行
+ClientCallbackAttribute：属性，加在成员方法上可以再clients上运行，但是不会生成警告
+ClientRpcAttribute：属性，加在成员方法上使方法可以被clients从服务器上调用
+CommandAttribute：属性，加在成员方法上，允许一个client发送命令在服务器上调用
+NetworkSettingAttribute：属性，加在类前面，用于配置从networkbehavior基类派生的脚本的网络设置
+ServerAttribute：属性，加在NetworkBehaviour类的成员方法前，使方法只能在服务器上运行
+ServerCallbackAttribute：属性，加在NetworkBehaviour类的成员方法前，使方法只能在服务器上运行，但不会生成警告
+SyncEventAttribute：属性，在NetworkBehaviour类的事件前加，当事件在服务器上调用时在client上调用
+SyncVarAttribute：属性，在NetworkBehaviour类的成员变量前加，，这些变量将会有从服务器到client自己的同步数据
+TargetRRpcAttribute：属性，加在NetworkBehaviour类的成员方法前，允许clients从服务器上调用。不同于ClientRpcAttribute，他只针对一个特定的client，不是所有的client
+UnityEngine.Playables
+AnimationPlayableUtilities：一些关于简单使用Playable与Animations的实用方法
+FrameData：结构，包含Playable. prepareframe中接收到的帧信息
+EvaluationType：枚举，描述PlayableGraph评估的方法
+Playable：结构，是可自定义的运行对象，他们可以连接起来并包含在PlayableGraph中来创建复杂的行为
+PlayableAsset：一个用于在运行时创建Playable的资源的基类
+PlayableBehaviour：是每个自定义playable脚本的基类
+PlayableBinding：结构，保存PlayableAsset输出的信息
+PlayableDirector：创建一个PlayableAsset和控制物体的回播
+PlayableExtensions：扩充继承了IPlayable的类型
+PlayableGraph：管理Playable的创建和破坏
+PlayableOutput：看IPlayableOutput
+PlayableOutputExtensions：扩充所有继承了IPlayableOutput的类型
+ScriptPlayable<T0>：继承IPlayable，包含了一个关于PlayableGraph的PlayableBehaviour，PlayableBehaviour被用在写自定义的Playable
+ScriptPlayableBinding：可以创建一个PlayableBinding，PlayableBinding包含了关于ScriptPlayableOutput的信息
+ScriptPlayableOutput：继承IPlayableOutput，控制一个关于PlayableGraph的脚本输出
+IPlayable：所有Playable继承
+IPlayableAsset：继承他的类被允许将playables放入graph
+IPlayableBehaviour：所有Playable行为的继承
+IPlayableOutput：所有Playable输出的继承
+DirectorUpdataMode：枚举，定义用于更新Director graph的时间源
+DirectorWrapMode：枚举，Playables的换行模式
+PlayableTraversalMode：枚举，Playables的遍历模式
+PlayState：枚举，Playable的状态
+UnityEngine.Profiling
+CustomSampler：自定义CPU性能标签性能分析代码块
+Profiler:从代码中控制性能
+Recorder：通过特殊采样器记录性能分析数据
+Sampler：控制一个CPU性能标签
+UnityEngine.Purchasing
+UnityEngine.Purchasing.Extension
+AbstractPurchasingModule：IAP模块的基类
+AbstractStore：购买插件的扩充
+ProductDescription：一个公共版本的商店子系统
+PurchaseFailureDescription：代表购买失败时描述内容
+ICatalogProvider：在运行时能够在产品配置中添加产品或替换产品
+IPurchasingBinder：用一个或多个存储结构配置Unity IAP
+IPurchasingModule：Unity IAP的一个或多个存储配置
+IStore：基础存储系统的接口，这个存储系统是关于采购平台的
+IStoreCallback：存储与Unity IAP联系时被调用
+IStoreConfiguration：扩展存储配置
+Classes
+ConfigurationBuilder：为Unity IAP建立配置
+IDs：将产商店的特定产品标识成一个或多个存储名字
+PayoutDefinition：定义购买产品时支付给玩家的奖励
+Product：代表一个被购买的产品
+ProductCollection：提供一些方法通过ID检索产品
+ProductDefinition：标识用于销售的产品的相关内容
+ProductMetadata：从商店中检索一个产品的本地信息
+PurchaseEventArgs：包含一个关于成功购买的产品的变量
+PurchaseFailedEventArgs：包含购买失败时的数据
+UnityPurchasing：Unity IAP的入口
+IExtensionProvider：提供特定存储的扩展功能的访问
+IStoreController：应用程序来控制Unity IAP
+IStoreExtension：对于所有购买功能的扩展的公共接口
+IStoreListener：提供一些方法，这些方法在一些购买情况下被调用
+InitializationFailureReason：枚举，Unity IAP初始失败的原因
+PayoutType：指定PayoutDefinition的类型
+ProductType：枚举，可买到商品的类别
+PurchaseFailureReason：枚举，购买失败的原因
+PurchaseProcessingResult：枚举，通知Unity IAP是否完成了购买
+UnityEngine.Rendering
+AsyncGPUReadback：允许异步读取GPU资源
+AsyncGPUReadbackRequest：代表对GPU资源的异步请求
+CommandBuffer：要执行图形命令的列表
+GPUFence：用于管理异步计算队列上的任务与图形队列之间的同步
+GraphicsSettings：Unity中Graphics Settings的设置
+PlatformKeywordSet：代表特定平台的ShaderKeyword
+ReflectionProbeBlendInfo：包含了关于混合探头所需的信息
+RenderTargetBinding：描述了一个具有一个或多个颜色缓冲区等的渲染目标
+RenderTargetIdentifier：为CommandBuffer定义一个RenderTexture
+ShaderKeyword：在一个着色器中一个指定代码路径的标识符
+ShaderKeywordSet：代表特定shader的ShaderKeyword
+SortingGroup：组件，确保子物体将会一起渲染和排序
+SphericalHarmonicsL2：球谐函数的二阶
+SplashScreen：Unity启动画面的公共函数
+AmbientMode：枚举，环境光参数
+BlendMode：枚举，控制混合的参数
+BlendOp：枚举，混合类型
+BuiltinRenderTextureType：枚举，当相机渲染场景时，临时内置的渲染纹理
+BuiltinShaderDefine：枚举，当编辑shaders时定义编辑器设置的
+BuiltinShaderMode：枚举，GraphicsSettings所使用的内置着色器模式
+BuiltinShaderType：枚举，GraphicsSettings所使用的内置着色器类型
+CameraEvent：枚举，在相机渲染中定义一个地方去联系CommandBuffer
+CameraHDRMode：枚举，用于渲染的HDR模式
+ColorWriteMask：枚举，指定将那些颜色参数写入目标帧缓冲区
+CompareFunction：枚举，深度或模具的比较功能
+ComputeQueueType：枚举，描述优先级和队列的负载平衡特征
+CopyTextureSupport：枚举，对Graphics.CopyTexture中各种情况的支持
+CullMode：枚举，单面显示的模式
+DefaultReflectionMode：枚举，默认反射的模式
+GraphicsDeviceType：枚举，Graphics服务的API类型
+GraphicsTier：枚举，图形层
+IndexFormat：枚举，网格索引缓冲数据的格式
+LightEvent：枚举，在光照渲染中定义一个地方去联系CommandBuffer
+LightProbeUsage：枚举，光探针类型
+LightShadowResolution：枚举，阴影分辨率的类型
+OpaqueSortMode：枚举，不透明对象模式
+PassType：枚举，着色器通道类型
+RealtimeGICPUUsage：枚举，在运行时CPU分配给最终光照计算的量
+ReflectionCubemapCompression：枚举，决定Unity如何去压缩烘焙的反射贴图
+ReflectionProbeClearFlags：枚举，ReflectionProbe.clearFlags的类型
+ReflectionProbeMode：枚举，反射探头更新类型
+ReflectionProbeRefreshMode：枚举，描述反射探头在运行时更新的方法
+ReflectionProbeTimeSlicingMode：枚举，决定Unity是几帧内更新cubemap还是一帧内更新所有cubemap
+ReflectionProbeUsage：枚举，反射探头的使用
+RenderBufferLoadAction：枚举，描述当渲染目标被加载时应该做什么
+RenderQueue：枚举，明确那个物体被渲染
+ShadowCastingMode：枚举，阴影如何从物体上投射
+ShadowMapPass：枚举，允许控制那些阴影映射通道来执行CommandBuffer对象
+ShadowSamplingMode：枚举，被CommandBuffer.SetShadowSamplingMode使用
+StencilOp：枚举，指明当渲染是在模具缓冲区上执行的操作
+SynchronisationStage：枚举，描述在GPU上进程的阶段
+TextureDimension：枚举，图片规格
+UVChannelFlags：枚举，代表每个UV通道的标志
+UnityEngine.SceneManagement
+Scene：场景运行时的数据
+SceneManager：运行时场景管理
+SceneUtility：关于场景和生成设置
+LoadSceneMode：枚举，当使用Scene使用此类
+ 
+
+UnityEngine.UI
+AnimationTriggers：存储动画转换
+AspectRatioFitter：调整RectTransform的大小以适应指定的宽高比
+--AspectMode：指定一个执行宽高比的模式
+BaseMeshEffect：影响指定网格的基本类
+Button：一个能够点击触发事件的标准按钮
+  --ButtonClickedEvent：解释按钮事件
+CanvasScaler：组件，控制画布的整体比例和像素
+  --ScaleMode：枚举，决定UI元素在画布中多大
+  --ScreenMatchMode：枚举，将画布的宽度或高度作为参考
+  --Unit：枚举，用于指定一个物理单元
+CanvasUpdateRegistry：画布元素能够从新注册的地方
+ClipperRegistry：注册类，跟踪在场景中所有的IClippers
+Clipping：当使用IClipper时用
+ColorBlock：结构体，在Selectable里存储一个颜色
+ContentSizeFitter：重新调整RectTransform的大小去适应内容的大小
+  --FitMode：枚举，去使用的大小
+DefaultControls：创建一些默认的UI（如按钮等）
+  --Resources：结构体，用于默认控件传递的资源
+Dropdown：下拉列表的UI
+  --DropdownEvent：当下拉菜单改变时调用
+  --OptionData：存储下拉列表中单个选项的文本或图像
+  --OptionDataList：存储下拉列表的选项
+FontData：存储文本设置
+FontUpdateTracker：帮助文本更新
+Graphic：所有UI组件的基类
+GraphicRaycaster：光线投射到的UI元素
+  --BlockingObjects：画布上阻塞元素的列表
+GraphicRebuildTracker：在编辑器下追踪所有的Graphics，使其能够继续运行
+GraphicRegistry：注册那些Graphic映射到画布上
+GridLayoutGroup：组件，用于在所有单元格大小相同的网格中排列
+HorizontalLayoutGroup：组件，同时布局子元素
+HorizontalOrVerticalLayoutGroup：是HorizontalLayoutGroup和VerticalLayoutGroup的抽象类
+Image：图片
+  --FillMethod：枚举，图片被填充的方式
+  --Origin180：枚举，为Image.FillMethod.Radial180
+  --Origin360：枚举，为Image.FillMethod.Radial360
+  --Origin90：枚举，为Image.FillMethod.Radial90
+  --OriginHorizontal：枚举，为Image.FillMethod.Horizontal
+  --OriginHorizontal：枚举，为Image.FillMethod.Vertical
+  --Type：枚举，图片显示的类型
+InputField：UI的一种类型，输入区域
+  --OnChangeEvent：当InputField更新时被回调
+  --SubmitEvent：InputField最为参数的Unity事件（即提交）
+  --CharacterValidation：枚举，允许添加到字符串中的字符类型
+  --ContentType：枚举，指明输入内容的类型
+  --InputType：枚举，通过InputField输入的数据类型
+  --LineType：枚举，描述InputField的行为
+LayoutElement：组件，使物体成为布局元素或继承已经存在布局元素的值
+LayoutGroup：所有layout groups的抽象基本类
+LayoutRebuilder：管理画布元素布局重建的类
+LayoutUtility：有一些能查询布局元素的最小、首选和灵活大小的方法
+Mask：组件，是否屏蔽孩子
+MaskableGraphic：一个能够被遮罩的Graphic
+MaskUtilities：提供一些特定屏蔽的方法
+Navigation：结构体，存储了一些导航相关的信息
+  --Mode：枚举，导航类型
+Outline：向一个图形添加概述
+PositionAsUV1：
+RawImage：显示一个Texture2D
+RectMask2D：组件，与Mask类似，只不过是2D
+Scrollbar：滚动条
+  --ScrollEvent：当滚动条被滚动时调用
+  --Direction：枚举，指明滚动条的四个方向
+ScrollRect：组件，制造一个子类的RectTransform滚动轴
+  --ScrollRectEvent：ScrollRect使用的事件类型
+  --MovementType：枚举，当内容超出容器的限制时的行为
+  ScrollbarVisibility：枚举，滚动条可见性
+Selectable：自定义可选控件
+  --SelectionState：枚举，被选择时的状态
+  --Transition：枚举，Selectable的转换类型
+Shadow：给图形加轮廓
+Slider：滑动轴
+  --SliderEvent：滑动轴事件的类型
+  --Direction：枚举，只是滑动轴的四个方向
+SpriteState：结构体，存储了Selectable中精灵转换的状态
+Text：文本
+Toggle：有开和关两种状态的触发器
+  --ToggleEvent：当触发器被触发时被调用
+  --ToggleTransition：枚举，显示触发器激活或停用时的动态（直接关掉还是淡入淡出）
+ToggleGroup：组件，代表一组Toggle
+VertexHelper：帮助产生UI网格
+VerticalLayoutGroup：组件，布局子元素之间的布局

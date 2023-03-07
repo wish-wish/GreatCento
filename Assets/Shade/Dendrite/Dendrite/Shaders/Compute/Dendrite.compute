@@ -1,0 +1,84 @@
+﻿#define NON_SKINNED
+
+#pragma kernel Setup
+#pragma kernel Seed
+#pragma kernel Search
+#pragma kernel Grow
+#pragma kernel Attract
+#pragma kernel Connect
+#pragma kernel Remove
+
+#define THREAD_1D [numthreads(128, 1, 1)]
+
+#include "../../Common/Shaders/Random.hlsl"
+
+#include "../Common/Attraction.hlsl"
+#include "../Common/Node.hlsl"
+#include "../Common/Edge.hlsl"
+#include "../Common/Candidate.hlsl"
+#include "./Kernels/Define.hlsl"
+
+RWStructuredBuffer<Attraction> _Attractions;
+
+AppendStructuredBuffer<uint> _NodesPoolAppend;
+ConsumeStructuredBuffer<uint> _NodesPoolConsume;
+RWStructuredBuffer<Node> _Nodes;
+
+AppendStructuredBuffer<Candidate> _CandidatesAppend;
+ConsumeStructuredBuffer<Candidate> _CandidatesConsume;
+
+Node InitializeNode(Node node)
+{
+  node.position = float3(0, 0, 0);
+  node.t = 0;
+  node.offset = 0;
+  node.mass = 0;
+  node.from = -1;
+  return node;
+}
+
+uint CreateNode(out Node node)
+{
+  uint i = _NodesPoolConsume.Consume();
+  node = InitializeNode(node);
+  node.active = true;
+  return i;
+}
+
+THREAD_1D
+#include "./Kernels/Setup.hlsl"
+
+THREAD_1D
+void Seed (uint3 id : SV_DispatchThreadID)
+{
+  uint idx = id.x;
+
+  uint count, stride;
+  _Seeds.GetDimensions(count, stride);
+  if (idx >= count)
+    return;
+
+  Node n;
+  uint i = CreateNode(n);
+  n.position = _Seeds[idx];
+  n.t = 1;
+  n.offset = 0;
+  n.from = -1;
+  n.mass = lerp(_MassMin, _MassMax, nrand(id.xy));
+  _Nodes[i] = n;
+}
+
+THREAD_1D
+#include "./Kernels/Search.hlsl"
+
+THREAD_1D
+#include "./Kernels/Grow.hlsl"
+
+THREAD_1D
+#include "./Kernels/Attract.hlsl"
+
+THREAD_1D
+#include "./Kernels/Connect.hlsl"
+
+THREAD_1D
+#include "./Kernels/Remove.hlsl"

@@ -1,0 +1,293 @@
+fileFormatVersion: 2
+guid: 79a3e734c5dcb2449994b9324c78fbc3
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Armature
+    100002: Bone
+    100004: Bone.001
+    100006: Bone.002
+    100008: Bone.003
+    100010: Bone.004
+    100012: Bone.005
+    100014: Bone.005_end
+    100016: Bone.006
+    100018: Bone.010
+    100020: Bone.011
+    100022: Bone.012
+    100024: Bone.013
+    100026: Bone.013_end
+    100028: Bone.014
+    100030: Bone.015
+    100032: Bone.016
+    100034: Bone.017
+    100036: Bone.017_end
+    100038: Bone.018
+    100040: Bone.019
+    100042: Bone.020
+    100044: Bone.021
+    100046: Bone.021_end
+    100048: Bone.022
+    100050: Bone.023
+    100052: Bone.024
+    100054: Bone.025
+    100056: Bone.025_end
+    100058: Bone.026
+    100060: Bone.027
+    100062: Bone.028
+    100064: Bone.029
+    100066: Bone.029_end
+    100068: Bone.030
+    100070: Bone.031
+    100072: Bone.032
+    100074: Bone.033
+    100076: Bone.033_end
+    100078: Bone.034
+    100080: Bone.035
+    100082: Bone.036
+    100084: Bone.037
+    100086: Bone.038
+    100088: Bone.039
+    100090: Bone.040
+    100092: Bone.041
+    100094: Bone.042
+    100096: Bone.043
+    100098: Bone.044
+    100100: Bone.045
+    100102: Bone.046
+    100104: Bone.047
+    100106: Bone.048
+    100108: Bone.049
+    100110: Bone.050
+    100112: Bone.050_end
+    100114: Bone.051
+    100116: Bone.052
+    100118: Bone.053
+    100120: Bone.054
+    100122: Bone.054_end
+    100124: Bone.055
+    100126: Bone.056
+    100128: Bone.057
+    100130: Bone.058
+    100132: Bone.058_end
+    100134: //RootNode
+    100136: Camera
+    100138: Cube
+    100140: Cube.002
+    100142: Lamp
+    400000: Armature
+    400002: Bone
+    400004: Bone.001
+    400006: Bone.002
+    400008: Bone.003
+    400010: Bone.004
+    400012: Bone.005
+    400014: Bone.005_end
+    400016: Bone.006
+    400018: Bone.010
+    400020: Bone.011
+    400022: Bone.012
+    400024: Bone.013
+    400026: Bone.013_end
+    400028: Bone.014
+    400030: Bone.015
+    400032: Bone.016
+    400034: Bone.017
+    400036: Bone.017_end
+    400038: Bone.018
+    400040: Bone.019
+    400042: Bone.020
+    400044: Bone.021
+    400046: Bone.021_end
+    400048: Bone.022
+    400050: Bone.023
+    400052: Bone.024
+    400054: Bone.025
+    400056: Bone.025_end
+    400058: Bone.026
+    400060: Bone.027
+    400062: Bone.028
+    400064: Bone.029
+    400066: Bone.029_end
+    400068: Bone.030
+    400070: Bone.031
+    400072: Bone.032
+    400074: Bone.033
+    400076: Bone.033_end
+    400078: Bone.034
+    400080: Bone.035
+    400082: Bone.036
+    400084: Bone.037
+    400086: Bone.038
+    400088: Bone.039
+    400090: Bone.040
+    400092: Bone.041
+    400094: Bone.042
+    400096: Bone.043
+    400098: Bone.044
+    400100: Bone.045
+    400102: Bone.046
+    400104: Bone.047
+    400106: Bone.048
+    400108: Bone.049
+    400110: Bone.050
+    400112: Bone.050_end
+    400114: Bone.051
+    400116: Bone.052
+    400118: Bone.053
+    400120: Bone.054
+    400122: Bone.054_end
+    400124: Bone.055
+    400126: Bone.056
+    400128: Bone.057
+    400130: Bone.058
+    400132: Bone.058_end
+    400134: //RootNode
+    400136: Camera
+    400138: Cube
+    400140: Cube.002
+    400142: Lamp
+    2300000: Cube.002
+    3300000: Cube.002
+    4300000: Cube
+    4300002: Cube.002
+    7400000: Cube.002|Cube.002Action
+    9500000: //RootNode
+    13700000: Cube
+    2186277476908879412: ImportLogs
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "2 \u043A\u0440\u044B\u043B\u043E"
+    second: {fileID: 2100000, guid: 7ad98d6cef7b1a840bad0a499c2eeea2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: No Name
+    second: {fileID: 2100000, guid: 2cb52f404e20df547993d833fe9aebca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "\u0413\u043B\u0430\u0437\u0430"
+    second: {fileID: 2100000, guid: a5aad014d1aacd34ca51bd048d1ac444, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "\u0413\u043E\u043B\u043E\u0432\u0430"
+    second: {fileID: 2100000, guid: 3cf5c0f12931fde4591e33e6a50c646f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "\u0413\u0440\u0443\u0434\u044C"
+    second: {fileID: 2100000, guid: 3642d2a182b0e504188a623284d22b04, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "\u041B\u0430\u043F\u043A\u0438"
+    second: {fileID: 2100000, guid: 732b88338c52d3d4ab38f9b930e0b860, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "\u0430\u043D\u0442\u0435\u043D\u043A\u0438"
+    second: {fileID: 2100000, guid: 21da788d1a05dd54991fa7788baa02be, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "\u043A\u043E\u043D\u0435\u0446_\u0442\u0435\u043B\u0430"
+    second: {fileID: 2100000, guid: f666901950899c24392ee5697e62837a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "\u0445\u043E\u0431\u043E\u0442"
+    second: {fileID: 2100000, guid: d04c7c3434898684db61cd01d0d1a2f5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "\u0448\u0443\u043F\u0430\u043B\u044C\u0446\u0430"
+    second: {fileID: 2100000, guid: 2fa5d02d7ce50304584672121636f16e, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: Cube.002
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

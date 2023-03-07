@@ -1,0 +1,107 @@
+Base path: D:/Program Files/2018.4.25f1/Editor/Data
+Cmd: initializeCompiler
+Cmd: compileComputeKernel
+  api=15 insize=1632 outsize=1325 ok=1
+Cmd: compileComputeKernel
+  error: 1 plat 15 at VerletSimulator.compute(55): use of potentially uninitialized variable (compute_delta)
+  api=15 insize=2094 outsize=7177 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=4891 outsize=1957 ok=1
+Cmd: compileComputeKernel
+  api=15 insize=4891 outsize=1757 ok=1
+Cmd: compileComputeKernel
+  api=9 insize=2668 outsize=6789 ok=1
+Cmd: compileComputeKernel
+  api=15 insize=1262 outsize=2481 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=3316 outsize=1109 ok=1
+Cmd: compileComputeKernel
+  api=15 insize=3316 outsize=1677 ok=1
+Cmd: compileComputeKernel
+  api=9 insize=4688 outsize=16165 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=3277 outsize=1017 ok=1
+Cmd: compileComputeKernel
+  api=9 insize=3277 outsize=1893 ok=1
+Cmd: initializeCompiler
+Cmd: compileComputeKernel
+  api=15 insize=1386 outsize=5385 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=3182 outsize=2253 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=10881 outsize=10593 ok=1
+Cmd: compileComputeKernel
+  api=15 insize=4845 outsize=8201 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=3396 outsize=2581 ok=1
+Cmd: compileComputeKernel
+  api=15 insize=18299 outsize=16185 ok=1
+Cmd: compileComputeKernel
+  api=15 insize=18299 outsize=25341 ok=1
+Cmd: compileComputeKernel
+  api=15 insize=2867 outsize=3313 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=1454 outsize=1461 ok=1
+Cmd: initializeCompiler
+Cmd: compileComputeKernel
+  error: 2 plat 15 at AutoExposure.compute(7): failed to open source file: 'Packages/com.unity.postprocessing/PostProcessing/Shaders/StdLib.hlsl'
+  api=15 insize=3190 outsize=0 ok=0
+Cmd: compileComputeKernel
+  error: 2 plat 4 at MultiScaleVORender.compute(30): failed to open source file: 'Packages/com.unity.postprocessing/PostProcessing/Shaders/StdLib.hlsl'
+  api=4 insize=10935 outsize=0 ok=0
+Cmd: compileComputeKernel
+  error: 2 plat 4 at Lut3DBaker.compute(1): failed to open source file: 'Packages/com.unity.postprocessing/PostProcessing/Shaders/StdLib.hlsl'
+  api=4 insize=5017 outsize=0 ok=0
+Cmd: compileComputeKernel
+  error: 2 plat 4 at MultiScaleVOUpsample.compute(37): failed to open source file: 'Packages/com.unity.postprocessing/PostProcessing/Shaders/StdLib.hlsl'
+  api=4 insize=18353 outsize=0 ok=0
+Cmd: compileComputeKernel
+  error: 2 plat 15 at MultiScaleVODownsample2.compute(28): failed to open source file: 'Packages/com.unity.postprocessing/PostProcessing/Shaders/StdLib.hlsl'
+  api=15 insize=2098 outsize=0 ok=0
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
